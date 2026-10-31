@@ -2,7 +2,7 @@
 
 **Un feu d'artifice à plusieurs mains. Tu vois les cartes de tous, sauf les tiennes.**
 
-👉 **Jouer : à venir**
+👉 **Jouer : https://hanabi-2bap.onrender.com** (la première ouverture peut prendre jusqu'à une minute, le temps que le serveur gratuit se réveille)
 
 Jeu multijoueur coopératif en ligne, à jouer entre amis depuis un navigateur, sur téléphone ou ordinateur, sans compte ni installation.
 D'après *Hanabi*, le jeu d'Antoine Bauza édité par Cocktail Games et Les XII Singes (projet de fans, non officiel, avec ses propres visuels).
