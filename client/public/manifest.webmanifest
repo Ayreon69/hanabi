@@ -1,0 +1,11 @@
+{
+  "name": "Hanabi",
+  "short_name": "Hanabi",
+  "description": "Un feu d'artifice à plusieurs mains. Tu vois les cartes de tous, sauf les tiennes.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070b1d",
+  "theme_color": "#070b1d",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
