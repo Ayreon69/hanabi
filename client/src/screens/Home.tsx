@@ -1,6 +1,6 @@
 // Accueil : l'estampe du pont un soir de fête, pseudo + avatar, créer / rejoindre une table, entraînement, règles.
 import { motion } from 'framer-motion';
-import { BookOpen, Bot, LogIn, Plus } from 'lucide-react';
+import { BookOpen, Bot, House, LogIn, Plus } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { AVATARS, COLORS } from '../../../shared/protocol';
 import { PlayingCard } from '../components/Cards';
@@ -89,6 +89,9 @@ export function Home() {
 
   return (
     <Night className="home">
+      <a className="all-games" href="https://akhis-games.onrender.com">
+        <House size={16} aria-hidden /> Tous les jeux
+      </a>
       <Bridge />
       <header className="home-hero">
         <motion.div initial={{ y: -12 }} animate={{ y: 0 }} transition={{ duration: 0.6 }}>
