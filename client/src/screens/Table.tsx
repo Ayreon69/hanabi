@@ -95,7 +95,12 @@ function useTableEffects(view: RoomView, setFlights: (f: (x: Flight[]) => Flight
         sfx.launch();
         window.setTimeout(() => {
           const r = document.querySelector(`[data-slot="${card.color}"]`)?.getBoundingClientRect();
-          if (r) firework(r.left + r.width / 2, Math.max(60, r.top - 40), card.color, { big: card.value === 5, from: { x: r.left + r.width / 2, y: r.top + r.height / 2 } });
+          if (r) {
+            // Sur téléphone, les feux sont collés en haut de l'écran : la gerbe éclate alors sous eux, sinon elle sortirait du cadre.
+            const x = r.left + r.width / 2;
+            const sky = r.top - 40 >= 120;
+            firework(x, sky ? r.top - 40 : r.bottom + 90, card.color, { big: card.value === 5, from: sky ? { x, y: r.top + r.height / 2 } : undefined });
+          }
           sfx.burst(card.value === 5);
           if (e.by === view.me) vibrate(25);
         }, land);
