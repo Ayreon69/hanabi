@@ -2230,6 +2230,14 @@ body.is-shaking #root {
 }
 
 /* Lien vers la page qui liste tous les jeux : une ligne de l'accueil, jamais par-dessus le titre */
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 16px;
+  align-self: flex-start;
+  margin: -20px 0 -8px;
+}
 .all-games {
   display: flex;
   align-items: center;
@@ -2241,8 +2249,6 @@ body.is-shaking #root {
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
-  align-self: flex-start;
-  margin: -20px 0 -8px;
 }
 .all-games:hover {
   text-decoration: underline;
